@@ -1,0 +1,104 @@
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title> Contact page </title>
+			<link rel="stylesheet" type="text/css" href="web.css">
+			<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"><!--(Fonts.googleapis.com, 2018)-->
+			
+
+		</head>
+
+		<body>
+
+
+			<header>
+
+				<nav>
+					
+					<ul>
+						<li><a href="index.html">INDEX</a></li>
+						<li><a href="About.html"> ABOUT</a></li>
+						<li><a href="CV.html">CV</a></li>
+						<li><a href="Social.html">SOCIAL</a></li>
+						<li><a href="Contact.html">CONTACT</a></li>
+						<li><a href="Model.html" target="-blank">MODELS</a></li>
+					</ul>
+				</nav>
+
+			</header>
+
+			<div class="mainBody"> 
+				<div class="box">
+					<h2>Contact Me</h2>
+					<form>
+
+						<input type="text" name="" placeholder="Full name ">
+						<br>
+						<input type="text" name="" placeholder="Email">
+						<br>
+						<div>
+							<input type="text" name="" placeholder="Subject">
+							<br>
+							<textarea placeholder="MESSAGE"></textarea>
+							<input type="submit" name=""  value="submit"></input>
+							<br>
+						</form><!-- (Online Tutorials, 2017)-->
+					</div>
+				</div>
+			</div>
+
+
+			
+
+			<div id="map" style="width:100%;height:300px"></div><!--(W3schools.com, 2018)-->
+
+			<script>
+				function myMap() {
+					var myHome = new google.maps.LatLng(27.718436,85.378713);
+					var mapAim = document.getElementById("map");
+					var mapOpt = {center: myHome, zoom: 5};
+					var map = new google.maps.Map(mapAim, mapOpt);
+					var marker = new google.maps.Marker({position:myHome});
+					marker.setMap(map);
+
+	  // Zoom to 9 when clicking on marker
+	  google.maps.event.addListener(marker,'click',function() {
+	  	map.setZoom(9);
+	  	map.setCenter(marker.getPosition());
+	  });
+	}
+</script><!--(W3schools.com, 2018)-->
+
+<script src="https://maps.googleapis.com/maps/api/js?key
+=AIzaSyAGWa4jwkybi2xrqXayWLiXgCVWgPPcKeM&callback=myMap"></script>
+<footer> <!--(W3schools.com, 2018)-->
+
+	<div class="below">
+		<div class="address">
+			<p>Address</p>
+			
+			<p1>Naryantar,kathmandu</p1>
+			<br>
+			<p2>NEPAL </p2>
+			<br>
+			<br>
+		</div>
+		<div class="Contact">
+			<p> Contact </p>
+			
+			<p1> Phone number:+9812515478</p1>
+			<br>
+			<p2>Email: puskalpulami@gmail.com</p2>
+			<br>
+			<br>  	
+		</div>
+
+		<div class="copyright">
+			<p> (c) copyright reserved by puskal </p>
+			<br>	
+		</div>
+		
+
+	</footer>
+</body>
+</html>

@@ -1,0 +1,382 @@
+            *{
+            	margin: 0;
+            	padding: 0;
+            }
+            header{
+            	background-color:rgba(0,0,0,0.5); 
+            	padding:2%;
+            	position: fixed;
+            	width:97.77%;
+            }
+
+
+            nav{
+
+            	flex-direction: column;
+            	top: 35%;
+            }
+
+
+            .mainBody{
+
+            	background: rgb(188,212,230); /*background color is copied from colrd.com*/
+            	height: 100%;
+            	text-align: center;
+            	margin: 0;
+            	padding: 1%;
+            	display: flex; flex-direction: row; justify-content: center;
+
+
+            }
+
+            .lap img {
+            	width: 100%;
+            	height:601px; 
+
+            }
+
+            .lap .bn {
+            	position: absolute;
+            	top: 50%;
+            	left: 50%;
+            	transform: translate(-50%, 50%);
+            	opacity: 1;
+            	font-family: 'Amatic SC', cursive;  /*(Fonts.googleapis.com, 2018)*/
+            	font-family: 'Courgette', cursive;  /*(Fonts.googleapis.com, 2018)*/
+            	background-color: rgba(0,0,0,0.3);
+            	font-size: 20px;
+            	padding: 16px 25px;
+            	border: 2px solid #6c7197;
+            	color: #6c7197;
+            	border-radius: 9px;
+
+            }
+
+            .lap .bn:hover{
+            	background-color:rgba(0,0,0,0.3) ;
+            	color:#e7ebee;
+            	border:2px solid #e7ebee;
+            }
+
+
+            nav ul{
+            	display: flex;
+            	justify-content: space-around;
+            	list-style: none;
+            	font-family: 'Lobster', cursive;  /*(Fonts.googleapis.com, 2018)*/
+            	font-family: 'Black And White Picture', sans-serif;  /*(Fonts.googleapis.com, 2018)*/
+            	font-family: 'Poiret One', cursive;   /*(Fonts.googleapis.com, 2018)*/
+            }
+
+
+
+            a:link, a:visited {
+            	color: white;
+            	display: block;
+            	text-align: center;
+            	text-decoration: none;
+            	text-transform: uppercase;
+
+            }
+
+            a:hover, a:active{
+            	border: 1.3px solid white;
+            	border-radius: 6px;
+            }
+            a.stay:hover {
+            	background-image: linear-gradient(to bottom, rgb(222, 26, 26) 0%, rgb(222, 26, 26) 100%);
+            }
+            
+            #container{
+            	width: 50px;
+            	height: 2px;
+            	background-color: #ffff77;
+            }
+
+
+
+            footer {
+
+            	background-color: #5f4949;
+            	margin: 0;
+            	clear: both;
+            	padding: 0%;
+            	height: 260px;
+            	margin: 0%;
+            	display: flex;
+            	flex-wrap: wrap;
+
+            }
+
+            .libraries:hover{
+            	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+            }
+
+            /* for contact */
+
+            
+            .box{
+            	margin-top: 100px;
+            	width: 55%;
+            	border-left-width: 10px;
+            	background: white;
+            	padding: 40px;
+            	box-sizing: border-box;
+            	border:1px solid rgba(0,0,0,0.1);
+            	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            	
+            }  /* (Online Tutorials, 2017) */
+
+
+            .box input{
+            	margin:0 0 40px;
+            	padding:0;
+            	text-transform: uppercase;
+
+            }
+
+
+            .box input {
+            	padding: 10px 0;
+            	margin-bottom: 30px;
+            }  /* (Online Tutorials, 2017) */
+
+            .box textarea{
+            	height: 80px;
+            	padding: 10px 0;
+            	margin-bottom: 40px;
+            }  /* (Online Tutorials, 2017) */
+
+            .box input,
+            .box textarea{
+            	width: 100%;
+            	box-sizing: border-box;
+            	box-shadow: none;
+            	outline: none;
+            	border: none;
+            	border-bottom: 1px solid #999;
+            }  /* (Online Tutorials, 2017) */
+
+            .box textarea{
+            	margin-bottom: 20px;
+
+            } /* (Online Tutorials, 2017) */
+
+            .box input [type="submit"]{
+            	border-bottom: none;
+            	cursor: pointer; 
+            	color:#fff;
+            	margin-bottom: 0;
+            	text-transform: uppercase;
+            }  (Online Tutorials, 2017)
+
+            .box form {
+            	padding: 0;
+            }
+
+            .box:hover{
+            	box-shadow: 0 22px 55px rgba(0,0,0,0.6);
+            }
+
+            /*this is for social media icons buttons */
+            .foot {
+
+            	display: flex;
+            	justify-content: center;
+            	width: 100%; 
+            	text-align: center;
+            	justify-content: center;
+            	height: 300px;
+            } /* (Online Tutorials, 2017)*/
+
+            .foot ul{
+            	margin: 0%;
+            	padding: 2%;
+            	display: flex;
+            	text-align: center;
+            	height: 50%;
+
+            }
+
+            .foot ul li {
+            	list-style: none;
+
+            }
+
+            .foot ul li a{
+            	width: 60px;
+            	height: 60px;
+            	display: block;
+            	margin: 0 10px;
+            	border-radius: 50%;
+            	padding: 6px;
+            	box-sizing: border-box;
+            	text-decoration: none;
+            	box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+            	background:linear-gradient(0deg, #ddd,#fff);
+            	transition: .5s;
+            }  /*(Online Tutorials, 2017)*/
+
+            .foot ul li a:hover{
+            	box-shadow:0 2px 5px rgba(0,0,0,0.3);
+
+            }
+
+            .foot ul li a .fa{
+            	width: 100%;
+            	height: 100%;
+            	display: block;
+            	background:linear-gradient(0deg, #ddd, #fff);
+            	border-radius: 50%;
+            	line-height: calc(60px - 12px);
+            	font-size: 24px;
+            	color: #262626;
+            	transition: .5s;
+            	text-align: center;
+
+            } /* (Online Tutorials, 2017) */
+            .foot ul li:nth-child(1) a:hover .fa{
+            	color: #3b5998;
+            }   /* (Online Tutorials, 2017) */
+
+            .foot ul li:nth-child(2) a:hover .fa {
+            	color: #00aced;
+            }  /* (Online Tutorials, 2017) */
+
+            .foot ul li:nth-child(3) a:hover .fa {
+            	color:#000000 ;
+            	
+            }  /* (Online Tutorials, 2017) */
+
+            .foot ul li:nth-child(4) a:hover .fa {
+            	color: #bc2a8d;
+            }  /* (Online Tutorials, 2017) */
+
+
+            .main {
+            	text-align: center;
+            	width: 100%;
+            	display: flex;
+            	justify-content: center;
+            	font-family: 'Lobster', cursive;  /*(Fonts.googleapis.com, 2018)*/
+            	padding-top: 20%;
+            	font-size: 1.3em;
+            }
+
+            .below {
+            	width: 100%;
+            	text-align: center;
+            	flex-direction: row-reverse;
+            	font-size: 21px;
+            	flex-direction: row-reverse;
+            	font-family: 'Lobster', cursive;  /*(Fonts.googleapis.com, 2018)*/
+            }
+
+            /* this code is for about.html*/
+
+            .BioDetail{
+            	display: flex;
+
+            }
+
+            .BioDetail .Bio{
+            	width: 50%;
+            	box-shadow: 0 5px 10px rgba(0,0,2,0.5);
+            	padding: 2%;
+            	margin: 1%;
+            	border-radius: 5px;
+            	background: white;
+            	font-family: 'Gamja Flower', cursive;  /*(Fonts.googleapis.com, 2018)*/
+            }
+
+            .BioDetail .Detail{
+            	width: 40%;
+            	box-shadow: 0 5px 10px rgba(0,0,2,0.5);
+            	padding: 2%;
+            	margin: 1%;
+            	border-radius: 5px;
+            	background: white;
+            	height: 200px;
+            	font-family: 'Gamja Flower', cursive; /*(Fonts.googleapis.com, 2018)*/
+            }
+
+
+            .BioDetail p{
+            	font-size: 23px;
+            	border-bottom: 1px solid black;
+            }
+            .pictures{
+            	display: flex;
+            	justify-content: center;
+            	background: #456;
+            }
+
+
+            /*this code is for CV.html*/
+
+            .SkillHobbyEduc{
+            	display: flex;
+            	width:100%;
+            }
+
+            .SkillHobbyEduc .Education{
+            	width: 50%;
+            	box-shadow: 0 5px 10px rgba(0,0,2,0.5);
+            	padding: 5%;
+            	margin: 10%;
+            	border-radius: 5px;
+            	background: white;
+            	font-family: 'Gamja Flower', cursive; /*(Fonts.googleapis.com, 2018)*/
+            
+            }
+
+            .Skills{
+            	text-align: center;
+            	width: 50%;
+            	box-shadow: 0 5px 10px rgba(0,0,2,0.5);
+            	padding: 5%;
+            	margin: 10%;
+            	border-radius: 5px;
+            	background: white;
+            	font-family: 'Gamja Flower', cursive; /*(Fonts.googleapis.com, 2018)*/
+            }
+            
+            .Hobbies{
+            	text-align: center;
+            	display: flex;
+            	width: 90%;
+            	flex-direction: row;
+            	box-shadow: 0 5px 10px rgba(0,0,2,0.5);
+            	margin: 5%;
+            	border-radius: 5px;
+            	background: white;
+            	font-family: 'Gamja Flower'; /*(Fonts.googleapis.com, 2018)*/
+            }
+
+            .Hobbies img{
+
+            	text-align: center;
+            	height: 400px;
+            	width: 40%;
+            	margin: 2%;
+            	border-radius: 10px;
+            }
+           
+
+
+	.puskal {
+		height: 640px;
+		background: white;
+		margin-left: 20%;
+		padding:1%;
+		box-shadow: 0 5px 10px rgba(0,0,2,0.5); 
+		height: 100%;
+		text-align: center;
+		width: 60%;
+		display: flex;flex-direction: row;justify-content: center;
+	}
+	.puskal img{
+		width: 75%;
+		border-radius: 6px;
+		padding:4%;	}
